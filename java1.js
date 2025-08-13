@@ -18,3 +18,6 @@ let text = "";
     }
      document.getElementById("demo").innerHTML = text;
 
+console.log(txt);
+document.getElementById("wloop").innerHTML = txt;
+
