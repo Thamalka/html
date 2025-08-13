@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="website.css">
+    <script language="javascript" type="text/javascript" src="java1.js">
+        document.write("Hellow World");
+    </script>
+</head>
+<div>
+<body>
+    <a>Home</a>
+    <a>Login</a>
+    <a>About</a>
+    <a>Contact</a>
+    <h1>Hotel Serinity</h1>
+    <img src="R.jfif.jfif" width ="100%" height="100%">
+</div>
+
+    <p id="demo"></p>
+    <p>A time-based greeting:</p>
+    <p id ="box"></p>
+
+
+<script>
+    let x =5;
+    let y = 2;
+    let z =x+y;
+    document.getElementById("demo").innerHTML=z;
+
+    const time = 100;
+    let greeting;
+    if (time < 10){
+        greeting = "Good morning";
+    }else if(time < 20){
+        greeting = "Good day";
+    }else{
+        greeting = "Good evening";
+    }
+    document.getElementById("box").innerHTML = greeting;
+
+    //week Days
+
+    let day;
+    switch (3){
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+        case 2:
+            day = "Tuesday"
+        case 3:
+            day = "Wendnesday";
+            break;
+        case 4:
+            day = "Thursday";
+        case 5:
+            day = "Friday";
+        case 6:
+            day = "Saturday"; 
+    }
+    document.getElementById("demo").innerHTML = "Today is " + day;
+
+    //loop
+    let text = "";
+    for (let i =0; i<5; i++){
+        text += "The number is " + i + "<br>";
+    }
+     document.getElementById("demo").innerHTML = text;
+
+     //while loop
+     
+     
+
+    
+</script>
+</body>
+</html>   
